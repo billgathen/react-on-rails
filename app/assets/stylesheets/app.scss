@@ -1,0 +1,25 @@
+div.color-picker {
+  width: 20%;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1em;
+
+  h1 {
+    margin: 0 0 0.25em 0;
+  }
+}
+
+ul.color-list {
+  border: 1px solid gray;
+  list-style-type: none;
+  padding: 0;
+}
+
+li.color {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+div.color-display {
+  border: 1px solid gray;
+}
