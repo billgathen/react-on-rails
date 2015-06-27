@@ -2,6 +2,8 @@
 
 This is a demo app to experiment with the [react-rails](https://github.com/reactjs/react-rails) library. It also explores how to pass state changes around inside a set of nested components.
 
+It isn't intended to be an introduction to React: for that, I've created [React Step-by-Step](https://github.com/billgathen/react-step-by-step) which starts with the basics and adds in many of the cool features of React itself. Once you've played around with the examples found there, the React components in this repo will make a lot more sense. :)
+
 ## react-rails
 
 The app is a vanilla [Rails 4](https://github.com/rails/rails) application exposing a [ColorPicker component](app/assets/javascripts/components/color_picker.js.jsx) powered by [React](https://facebook.github.io/react/). The configuration data to set up the component is supplied by the Rails [controller](app/controllers/color_picker_controller.rb) (to simulate getting data from a database) and passed into the React components via the ```react_component``` call in the [view](app/views/color_picker/index.html.erb).
