@@ -5,16 +5,10 @@ const config = {
   sourcemap: "external",
   entrypoints: [
     "app/javascript/application.js",
-    "app/javascript/welcome.js",
+    "app/javascript/welcome.tsx",
   ],
   outdir: path.join(process.cwd(), "app/assets/builds"),
   target: "browser",
-
-  // Allow JSX in JS files
-  loader: {
-    ".js": "jsx",
-    ".ts": "tsx",
-  },
 
   define: {
     "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "development"),
