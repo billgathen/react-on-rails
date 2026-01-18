@@ -41,7 +41,7 @@ gem "thruster", require: false
 gem "image_processing", "~> 1.2"
 
 # Eliminate "already loaded" conflict with ruby default gem
-gem "rdoc", "= 7.0.3"
+gem "rdoc", "7.1.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
