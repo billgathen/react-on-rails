@@ -9,6 +9,10 @@
   - `pbcopy < ~/.ssh/id_ed25519_github.pub`
   - GitHub -> Settings -> SSH and GPG keys -> New SSH Key -> MacBook Pro - 2026
   - `ssh -T git@github.com` 
+- Pin rdoc to Ruby 4 system default version by adding this to Gemfile (eliminates "already loaded" complaint when using `bin/dev`
+  - `gem "rdoc", "= 7.0.3"`
+  - `gem uninstall rdoc --version '7.1.0'`
+  - `gem cleanup rdoc`
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
