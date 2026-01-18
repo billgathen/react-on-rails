@@ -8,6 +8,10 @@
   - `ssh-add ~/.ssh/id_ed25519_github`
   - `pbcopy < ~/.ssh/id_ed25519_github.pub`
   - GitHub -> Settings -> SSH and GPG keys -> New SSH Key -> MacBook Pro - 2026
+  - `vim ~/.ssh/config`
+    - `Host: github.com`
+    - `User: git`
+    - `IdentityFile: ~/.ssh/id_ed25519_github`
   - `ssh -T git@github.com` 
 - Pin rdoc to Ruby 4 system default version by adding this to Gemfile (eliminates "already loaded" complaint when using `bin/dev`
   - `gem "rdoc", "= 7.0.3"`
