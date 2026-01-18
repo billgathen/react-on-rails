@@ -6,6 +6,10 @@ function NavigationBar() {
 }
 
 const domNode = document.getElementById('navigation');
-const root = createRoot(domNode);
-root.render(<NavigationBar />);
+if (domNode) {
+  const root = createRoot(domNode);
+  root.render(<NavigationBar />);
+} else {
+  console.error("Unable to find element #navigation");
+}
 
