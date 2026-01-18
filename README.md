@@ -1,6 +1,14 @@
 # README
 
-Created with `rails new react-on-rails --javascript=bun` to get transpilation and built-in testing
+- Created with `rails new react-on-rails --javascript=bun` to get transpilation and built-in testing
+- Setup SSH GitHub integration
+  - `ssh-keygen -t ed255519 -C 'bill@billgathen.com'`
+    - save as `/Users/bill/.ssh/id_ed25519_github`
+  - `eval "$(ssh-agent -s)"`
+  - `ssh-add ~/.ssh/id_ed25519_github`
+  - `pbcopy < ~/.ssh/id_ed25519_github.pub`
+  - GitHub -> Settings -> SSH and GPG keys -> New SSH Key -> MacBook Pro - 2026
+  - `ssh -T git@github.com` 
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
