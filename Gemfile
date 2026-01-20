@@ -55,6 +55,9 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # Formatting for vim
+  gem "syntax_tree", require: false
 end
 
 group :development do
